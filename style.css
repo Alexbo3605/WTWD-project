@@ -1,0 +1,250 @@
+body{
+
+    margin: 10px;
+
+}
+
+.project_class {
+    background-image: url(img/music_img.avif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+.first_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.link_anchor {
+    padding-left: 8px;
+    padding-top: 10px;
+}
+
+.rectangle {
+    position: relative;
+    display: none;
+}
+
+.rectangle:hover .dropdown_menu {
+    display: block;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+
+    width: 200px;
+    height: 110px;
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown_menu li {
+    padding: 8px;
+}
+
+.dropdown_menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .link_anchor {
+        display: none;
+    }
+
+    .rectangle {
+        display: block;
+    }
+}
+.music_imagine{
+    max-width: 700px;
+    max-height: 400px;
+}
+
+.container {
+    width: 100%;
+    height: 300px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    position: relative;
+    background: #442068;
+}
+
+.scrolling-content {
+    width: 200%;
+    height: 100%;
+    background: url('img/123.png');   
+    animation: scroll 12s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-32%);
+    }
+}
+
+.treck_form{
+    width: 1100px; 
+}
+
+.p_class{
+    color: #ffffff;
+    margin: auto;  
+}
+
+.checkbox_class{
+    color: #ffffff;    
+    margin: 0 0 20px 0;
+}
+
+.recomrnd_fild{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+.recomend{
+    width: 100px;
+    height: 60px;
+    margin: auto;
+}
+
+.radio_blok {
+    max-width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.radio_elem {
+    width: 6%;
+    height: 80px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(241deg, #9536F4 0%, rgba(158, 0, 202, 0.49) 61.53%, rgba(255, 0, 245, 0.00) 121.7%);
+    margin: auto;
+    transition: background-color 0.3s ease;
+}
+
+.radio_elem:hover {
+
+    background: linear-gradient(0deg, #c083fd 0%, rgba(166, 79, 190, 0.49) 61.53%, rgba(255, 0, 245, 0.00) 121.7% 121.7%);
+}
+
+@media screen and (max-width: 1200px) {
+    .radio_elem {
+        width: calc(16.66% - 20px);
+        margin-bottom: 5px;
+    }
+
+    .radio_blok {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .radio_elem {
+        width: calc(30.33% - 20px);
+        margin: 0 10px 10px 10px;
+    }
+
+    .radio_blok {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.find_treck_fild{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;   
+}
+
+.find_treck_button{
+    
+    width: 40%;
+    height: 80px;
+    margin: 10px, auto;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(241deg, #9536F4 0%, rgba(158, 0, 202, 0.49) 61.53%, rgba(255, 0, 245, 0.00) 121.7%);
+}
+
+.find_treck_button:hover {
+
+    background: linear-gradient(0deg, #c083fd 0%, rgba(166, 79, 190, 0.49) 61.53%, rgba(255, 0, 245, 0.00) 121.7% 121.7%);
+}
+
+.recomend_blok {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recomend_fild {
+    width: calc(13.666% - 20px);
+    height: 160px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    margin: 10px 5px 5px 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .recomend_fild {
+        width: calc(30.33% - 20px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .recomend_fild {
+        width: calc(45% - 20px);
+    }
+}
