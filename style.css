@@ -40,11 +40,10 @@ body{
 .dropdown_menu {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
+    left: -65%;
     background-color: #fff;
 
-    width: 200px;
+    width: 110px;
     height: 110px;
     border-radius: 10px;
 
